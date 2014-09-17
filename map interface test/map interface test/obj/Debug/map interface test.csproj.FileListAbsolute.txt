@@ -1,0 +1,8 @@
+C:\Users\Alexandr\Desktop\map interface test\map interface test\bin\Debug\map interface test.exe.config
+C:\Users\Alexandr\Desktop\map interface test\map interface test\bin\Debug\map interface test.exe
+C:\Users\Alexandr\Desktop\map interface test\map interface test\bin\Debug\map interface test.pdb
+C:\Users\Alexandr\Desktop\map interface test\map interface test\obj\Debug\map interface test.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\map interface test\map interface test\obj\Debug\map interface test.exe
+C:\Users\Alexandr\Desktop\map interface test\map interface test\obj\Debug\map interface test.pdb
+C:\Users\Alexandr\Desktop\map interface test\map interface test\bin\Debug\MyMap.dll
+C:\Users\Alexandr\Desktop\map interface test\map interface test\bin\Debug\MyMap.pdb

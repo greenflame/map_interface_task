@@ -1,0 +1,4 @@
+C:\Users\Alexandr\Desktop\map interface test\MyMap\bin\Debug\MyMap.dll
+C:\Users\Alexandr\Desktop\map interface test\MyMap\bin\Debug\MyMap.pdb
+C:\Users\Alexandr\Desktop\map interface test\MyMap\obj\Debug\MyMap.dll
+C:\Users\Alexandr\Desktop\map interface test\MyMap\obj\Debug\MyMap.pdb
