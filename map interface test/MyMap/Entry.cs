@@ -8,6 +8,17 @@ namespace MyMap
 {
     public class Entry<K, V> : IEntry<K, V>
     {
+        public Entry()
+        {
+
+        }
+
+        public Entry(K key, V value)
+        {
+            Key = key;
+            Value = value;
+        }
+
         public K Key { get; set; }
         public V Value { get; set; }
 

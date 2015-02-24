@@ -41,8 +41,10 @@
   <ItemGroup>
     <Compile Include="ArrayMap.cs" />
     <Compile Include="Entry.cs" />
+    <Compile Include="HashMap.cs" />
     <Compile Include="IEntry.cs" />
     <Compile Include="IMap.cs" />
+    <Compile Include="LinkedMap.cs" />
     <Compile Include="MapException.cs" />
     <Compile Include="MapUtilsStatic.cs" />
     <Compile Include="MapUtilsGeneric.cs" />

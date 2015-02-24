@@ -11,7 +11,7 @@ namespace map_interface_test
     {
         static void Main(string[] args)
         {
-            IMap<string, int> map = new ArrayMap<string, int>();
+            IMap<string, int> map = new HashMap<string, int>();
 
             map.Put("yellow", 1);
             map.Put("blue", 10);

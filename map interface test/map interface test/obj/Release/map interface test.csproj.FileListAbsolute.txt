@@ -6,3 +6,11 @@ C:\Users\Alexandr\Desktop\map interface test\map interface test\bin\Release\MyMa
 C:\Users\Alexandr\Desktop\map interface test\map interface test\obj\Release\map interface test.csprojResolveAssemblyReference.cache
 C:\Users\Alexandr\Desktop\map interface test\map interface test\obj\Release\map interface test.exe
 C:\Users\Alexandr\Desktop\map interface test\map interface test\obj\Release\map interface test.pdb
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\map interface test\bin\Release\map interface test.exe.config
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\map interface test\obj\Release\map interface test.exe
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\map interface test\obj\Release\map interface test.pdb
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\map interface test\bin\Release\map interface test.exe
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\map interface test\bin\Release\map interface test.pdb
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\map interface test\bin\Release\MyMap.dll
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\map interface test\bin\Release\MyMap.pdb
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\map interface test\obj\Release\map interface test.csprojResolveAssemblyReference.cache

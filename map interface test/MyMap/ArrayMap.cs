@@ -8,17 +8,17 @@ namespace MyMap
 {
     public class ArrayMap<K, V> : IMap<K, V>
     {
-        private Entry<K, V>[] _array;
+        private IEntry<K, V>[] array_;
 
         public ArrayMap()
         {
-            _array = new Entry<K, V>[0];
+            array_ = new Entry<K, V>[0];
         }
 
         private int indexOf(K key)
         {
-            for (int i = 0; i < _array.Length; i++)
-                if (_array[i].Key.Equals(key))
+            for (int i = 0; i < array_.Length; i++)
+                if (array_[i].Key.Equals(key))
                     return i;
             return -1;
         }
@@ -27,8 +27,8 @@ namespace MyMap
         {
             if (indexOf(key) == -1) //key doesn't exist
             {
-                Array.Resize(ref _array, _array.Length + 1);
-                _array[_array.Length - 1] = new Entry<K, V>() { Key = key, Value = value };
+                Array.Resize(ref array_, array_.Length + 1);
+                array_[array_.Length - 1] = new Entry<K, V>() { Key = key, Value = value };
             }
             else
             {
@@ -38,7 +38,7 @@ namespace MyMap
 
         public void Clear()
         {
-            Array.Resize<Entry<K, V>>(ref _array, 0);
+            Array.Resize(ref array_, 0);
         }
 
         public bool ContainsKey(K key)
@@ -50,8 +50,8 @@ namespace MyMap
 
         public bool ContainsValue(V value)
         {
-            for (int i = 0; i < _array.Length; i++)
-                if (_array[i].Value.Equals(value))
+            for (int i = 0; i < array_.Length; i++)
+                if (array_[i].Value.Equals(value))
                     return true;
             return false;
         }
@@ -63,19 +63,19 @@ namespace MyMap
             if (index == -1)
                 throw new MapException("Cann't remove key. Key does't exist.");
             
-            for (int i = index; i < _array.Length - 1; i++)
+            for (int i = index; i < array_.Length - 1; i++)
             {
-                _array[i] = _array[i + 1];
+                array_[i] = array_[i + 1];
             }
 
-            Array.Resize<Entry<K, V>>(ref _array, _array.Length - 1);
+            Array.Resize(ref array_, array_.Length - 1);
         }
 
         public int Count
         {
             get
             {
-                return _array.Length;
+                return array_.Length;
             }
         }
 
@@ -83,7 +83,7 @@ namespace MyMap
         {
             get
             {
-                return _array.Length == 0;
+                return array_.Length == 0;
             }
         }
 
@@ -96,7 +96,7 @@ namespace MyMap
                 if (index == -1)
                     throw new MapException("Key doesn't exist.");
 
-                return _array[index].Value;
+                return array_[index].Value;
             }
             set
             {
@@ -105,7 +105,7 @@ namespace MyMap
                 if (index == -1)
                     throw new MapException("Key doesn't exist.");
 
-                _array[index].Value = value;
+                array_[index].Value = value;
             }
         }
 
@@ -113,10 +113,10 @@ namespace MyMap
         {
             get
             {
-                K[] keys = new K[_array.Length];
+                K[] keys = new K[array_.Length];
 
-                for (int i = 0; i < _array.Length; i++)
-                    keys[i] = _array[i].Key;
+                for (int i = 0; i < array_.Length; i++)
+                    keys[i] = array_[i].Key;
                 
                 return keys;
             }
@@ -126,10 +126,10 @@ namespace MyMap
         {
             get
             {
-                V[] values = new V[_array.Length];
+                V[] values = new V[array_.Length];
 
-                for (int i = 0; i < _array.Length; i++)
-                    values[i] = _array[i].Value;
+                for (int i = 0; i < array_.Length; i++)
+                    values[i] = array_[i].Value;
 
                 return values;
             }
@@ -137,10 +137,7 @@ namespace MyMap
 
         public IEnumerator<IEntry<K, V>> GetEnumerator()
         {
-            foreach(Entry<K, V> item in _array)
-            {
-                yield return item;
-            }
+            return ((IEnumerable<IEntry<K, V>>)array_).GetEnumerator();
         }
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()

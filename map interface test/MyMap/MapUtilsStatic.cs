@@ -29,7 +29,7 @@ namespace MyMap
             return false;
         }
 
-        public static bool CheckForAll<K, V>(IMap<K, V> map, CheckDelegate<K, V> checkDelegate) //todo ?
+        public static bool CheckForAll<K, V>(IMap<K, V> map, CheckDelegate<K, V> checkDelegate)
         {
             foreach (Entry<K, V> entry in map)
                 if (!checkDelegate(entry))

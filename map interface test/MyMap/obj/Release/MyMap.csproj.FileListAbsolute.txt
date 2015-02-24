@@ -3,3 +3,8 @@ C:\Users\Alexandr\Desktop\map interface test\MyMap\bin\Release\MyMap.pdb
 C:\Users\Alexandr\Desktop\map interface test\MyMap\obj\Release\MyMap.dll
 C:\Users\Alexandr\Desktop\map interface test\MyMap\obj\Release\MyMap.pdb
 C:\Users\Alexandr\Desktop\map interface test\MyMap\obj\Release\MyMap.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\MyMap\bin\Release\MyMap.dll
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\MyMap\bin\Release\MyMap.pdb
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\MyMap\obj\Release\MyMap.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\MyMap\obj\Release\MyMap.dll
+C:\Users\Alexandr\Desktop\map_interface_task\map interface test\MyMap\obj\Release\MyMap.pdb
